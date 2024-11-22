@@ -21,11 +21,11 @@ javax.swing.event.HyperlinkEvent y java.net.URI: Para manejar enlaces interactiv
 La clase DesafioFinalV2GUI hereda de JFrame, lo que la convierte en una ventana principal de la aplicación.
 
 3. Atributos de la Clase
-Campos de texto (JTextField): Para entrada de datos (nombre del archivo, términos de búsqueda, y encabezados).
-ComboBox (JComboBox): Permite seleccionar un criterio de búsqueda.
-Área de texto (JTextArea): Muestra los resultados de las búsquedas.
-Botones (JButton): Realizan acciones como buscar o limpiar campos.
-String archivoEntrada: Nombre del archivo por defecto (MOCK_DATA.csv).
+-Campos de texto (JTextField): Para entrada de datos (nombre del archivo, términos de búsqueda, y encabezados).
+-ComboBox (JComboBox): Permite seleccionar un criterio de búsqueda.
+-Área de texto (JTextArea): Muestra los resultados de las búsquedas.
+-Botones (JButton): Realizan acciones como buscar o limpiar campos.
+-String archivoEntrada: Nombre del archivo por defecto (MOCK_DATA.csv).
 
 4. Constructor
 El constructor inicializa la ventana y configura la interfaz gráfica: Configuración de la ventana.
@@ -35,28 +35,28 @@ Layout: BorderLayout para organizar componentes en áreas específicas (Norte, C
 
 Panel de Entrada: (Norte)
 -Se utiliza un JPanel con GridBagLayout para crear un formulario con campos de entrada:
-Campo de texto para especificar el archivo CSV.
-ComboBox para seleccionar criterios de búsqueda: "País", "Ocupación" o "Encabezado Específico".
-Campos de texto para ingresar encabezados personalizados.
-Botones Buscar y Guardar y Limpiar.
+-Campo de texto para especificar el archivo CSV.
+-ComboBox para seleccionar criterios de búsqueda: "País", "Ocupación" o "Encabezado Específico".
+-Campos de texto para ingresar encabezados personalizados.
+-Botones Buscar y Guardar y Limpiar.
 
 Área de Resultados: (Centro)
-JTextArea muestra los resultados de la búsqueda.
-Se incluye dentro de un JScrollPane para manejar scroll si hay muchos resultados.
+-JTextArea muestra los resultados de la búsqueda.
+-Se incluye dentro de un JScrollPane para manejar scroll si hay muchos resultados.
 
 5. Acciones de los Componentes:
 Botón "Buscar":
 Llama al método realizarBusqueda, que:
-Verifica si el archivo y el término de búsqueda son válidos.
-Lee el archivo CSV línea por línea y almacena los registros.
-Filtra los registros basados en el criterio seleccionado.
-Muestra los resultados en el área de texto. (JTextArea)
+-Verifica si el archivo y el término de búsqueda son válidos.
+-Lee el archivo CSV línea por línea y almacena los registros.
+-Filtra los registros basados en el criterio seleccionado.
+-Muestra los resultados en el área de texto. (JTextArea)
 
 Botón "Guardar y Limpiar":
-Llama al método guardarYLimpiar, que:
-Guarda los resultados en un nuevo archivo CSV.
-Usa los encabezados personalizados.
-Limpia los campos de texto.
+-Llama al método guardarYLimpiar, que:
+-Guarda los resultados en un nuevo archivo CSV.
+-Usa los encabezados personalizados.
+-Limpia los campos de texto.
 
 Al cerrar la ventana: (X)
 Sobrescribe el evento de cierre de ventana (windowClosing).
