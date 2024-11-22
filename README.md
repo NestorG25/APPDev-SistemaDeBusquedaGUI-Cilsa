@@ -1,15 +1,14 @@
 # SistemaDeBusquedaGUI
 Ejemplo: Sistema De Búsqueda de Archivos GUI (App Dev) Java y Framework Java Swing <br/>
-
-Este código implementa una aplicación gráfica en Java utilizando Swing.<br/>
-La aplicación permite buscar registros en un archivo CSV basado en criterios específicos y realizar operaciones adicionales como guardar los resultados o ajustar encabezados.<br/>
-Aquí tienes una explicación detallada paso a paso:<br/>
-
 Flujo General:<br/>
 Se carga la ventana con un formulario y un área de resultados.<br/>
 El usuario puede buscar en un archivo CSV seleccionando un criterio y proporcionando un término.<br/>
 Los resultados se muestran en pantalla y pueden guardarse en un archivo nuevo.<br/>
 El usuario puede cerrar el programa después de calificarlo.<br/>
+
+Este código implementa una aplicación gráfica en Java utilizando Swing.<br/>
+La aplicación permite buscar registros en un archivo CSV basado en criterios específicos y realizar operaciones adicionales como guardar los resultados o ajustar encabezados.<br/>
+Aquí tienes una explicación detallada paso a paso:<br/>
 
 1. Importación de Bibliotecas.<br/>
 javax.swing.* y java.awt.*: Para crear la interfaz gráfica.<br/>
