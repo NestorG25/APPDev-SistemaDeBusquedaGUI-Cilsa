@@ -1,0 +1,21 @@
+Este zip contiene un programa de búsqueda y filtrado de archivos que permite a los usuarios buscar en un archivo txt o CSV (valores separados por comas) y encontrar registros específicos según la ciudad u ocupación. 
+Así es como funciona en sencillos pasos:
+
+1) El programa primero le pide al usuario que ingrese el nombre de un archivo de entrada que desea buscar. 
+2) Luego lee el archivo completo,creando un ArrayList dividiendo cada línea en registros individuales que pueden analizarse.
+3) Después de leer el archivo, el programa presenta al usuario un menú para elegir sus criterios de búsqueda: puede buscar por ciudad, por ocupación, o por un encabezado en especifico.
+4) Una vez que el usuario selecciona su tipo de búsqueda (ciudad u ocupación), se le solicita que ingrese un término de búsqueda. 
+5) Luego, el programa revisa todos los registros del archivo y filtra solo los registros que coinciden con el término de búsqueda del usuario. 
+Por ejemplo, si el usuario busca "ingeniero" en una ocupación, el programa encontrará y recopilará todos los registros donde la ocupación contenga la palabra "ingeniero".
+6) Los resultados filtrados luego se muestran en la pantalla, mostrando todos los registros coincidentes. 
+7) Además, el programa crea automáticamente un nuevo archivo CSV con estos resultados de búsqueda, nombrando el archivo de salida según los criterios de búsqueda y el término utilizado. 
+Esto significa que si busca "Buenos Aires" como ciudad, se creará un archivo llamado "resultados_ciudad_buenosaires.csv". (Utilizando el string termino de busqueda () ingresado... basandose en el string criterio de busquedad (ciudad o ocupacion).
+8) Guardar los resultados en el nuevo archivo.
+
+Las características clave del programa incluyen:
+
+-Búsqueda que no distingue entre mayúsculas y minúsculas (no importa si es mayúsculas ni minúsculas)
+-Coincidencia parcial (por lo que "ingeniero" coincidiría con "ingeniero de software")
+-Generación automática de archivos de resultados
+-Manejo de errores para lectura de archivos y entradas de usuario
+-El programa utiliza las capacidades de manejo de archivos, manipulación de cadenas y procesamiento de listas de Java para lograr esta funcionalidad de búsqueda flexible, lo que lo convierte en una herramienta práctica para filtrar y extraer rápidamente información específica de archivos CSV.

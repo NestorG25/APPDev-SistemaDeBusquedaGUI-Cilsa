@@ -1,0 +1,5 @@
+Nombre,Edad,Provincia,Ocupacion
+Juan,30,Buenos Aires,Ingeniero
+Ana,25,Córdoba,Doctora
+Carlos,35,Buenos Aires,Abogado
+Lucía,28,Córdoba,Ingeniera
