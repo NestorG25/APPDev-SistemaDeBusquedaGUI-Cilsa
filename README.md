@@ -1,5 +1,6 @@
 # SistemaDeBusquedaGUI
 Ejemplo: Sistema De Búsqueda de Archivos GUI (App Dev) Java y Framework Java Swing <br/>
+
 Flujo General:<br/>
 Se carga la ventana con un formulario y un área de resultados.<br/>
 El usuario puede buscar en un archivo CSV seleccionando un criterio y proporcionando un término.<br/>
@@ -17,7 +18,7 @@ java.text.SimpleDateFormat: Para dar formato a las fechas al guardar archivos.<b
 java.util.*: Para manejar listas y otros utilitarios.<br/>
 javax.swing.event.HyperlinkEvent y java.net.URI: Para manejar enlaces interactivos en la ventana "Acerca de".<br/>
 
-2. Clase Principal.<br/>
+2. Clase Base/Superclase.<br/>
 La clase DesafioFinalV2GUI hereda de JFrame, lo que la convierte en una ventana principal de la aplicación.<br/>
 
 3. Atributos de la Clase.<br/>
@@ -27,9 +28,8 @@ La clase DesafioFinalV2GUI hereda de JFrame, lo que la convierte en una ventana 
 -Botones (JButton): Realizan acciones como buscar o limpiar campos.<br/>
 -String archivoEntrada: Nombre del archivo por defecto (MOCK_DATA.csv).<br/>
 
-4. Constructor.<br/>
-El constructor inicializa la ventana y configura la interfaz gráfica:<br/>
-/-Configuración de la ventana-/<br/>
+4. Constructor: El constructor inicializa la ventana y configura la interfaz gráfica:<br/>
+/Configuración de la ventana/<br/>
 Título: "Desafío Final V2 - Sistema de Búsqueda".<br/>
 Tamaño: 600x500 píxeles.<br/>
 Layout: BorderLayout para organizar componentes en áreas específicas (Norte, Centro, etc.).<br/>
@@ -60,43 +60,43 @@ Botón "Guardar y Limpiar":<br/>
 -Limpia los campos de texto.<br/>
 
 Al cerrar la ventana: (X)<br/>
-Sobrescribe el evento de cierre de ventana (windowClosing).<br/>
-Llama a mostrarVentanaValoracion, que:<br/>
-Muestra un cuadro de diálogo con opciones de calificación (1-5 estrellas).<br/>
-Finaliza el programa al cerrar la ventana.<br/>
+-Sobrescribe el evento de cierre de ventana (windowClosing).<br/>
+-Llama a mostrarVentanaValoracion, que:<br/>
+-Muestra un cuadro de diálogo con opciones de calificación (1-5 estrellas).<br/>
+-Finaliza el programa al cerrar la ventana.<br/>
 
 Barra Menú:<br/>
-Archivo: Permite seleccionar un archivo o salir del programa.<br/>
-Acerca de: Muestra un cuadro con enlaces a los perfiles de los creadores.<br/>
+-Archivo: Permite seleccionar un archivo o salir del programa.<br/>
+-Acerca de: Muestra un cuadro con enlaces a los perfiles de los creadores.<br/>
 
 6. Métodos principales con excepciones para crear el menu<br/>
 
 realizarBusqueda:<br/>
-Filtra el contenido del archivo basado en el criterio de búsqueda.<br/>
-Los resultados se almacenan en una lista y se muestran en el área de texto.<br/>
+-Filtra el contenido del archivo basado en el criterio de búsqueda.<br/>
+-Los resultados se almacenan en una lista y se muestran en el área de texto.<br/>
 
 mostrarResultados:<br/>
-Muestra los resultados formateados en el área de texto.<br/>
-Si no hay resultados, muestra un mensaje adecuado.<br/>
+-Muestra los resultados formateados en el área de texto.<br/>
+-Si no hay resultados, muestra un mensaje adecuado.<br/>
 
 guardarYLimpiar:<br/>
-Guarda los resultados en un archivo CSV con un nombre basado en el término de búsqueda o la fecha.<br/>
-Limpia todos los campos y la área de texto.<br/>
+-Guarda los resultados en un archivo CSV con un nombre basado en el término de búsqueda o la fecha.<br/>
+-Limpia todos los campos y la área de texto.<br/>
 
 limpiarCampos:<br/>
-Restablecer un archivo predeterminado. (archivoField.setText("MOCK_DATA.csv"))<br/>
+-Restablecer un archivo predeterminado. (archivoField.setText("MOCK_DATA.csv"))<br/>
 
 mostrarVentanaValoracion:<br/>
-Muestra un cuadro de diálogo para calificar el programa antes de salir.<br/>
+-Muestra un cuadro de diálogo para calificar el programa antes de salir.<br/>
 
 crearMenu:<br/>
-Configura la barra de menú con opciones de archivo y ayuda.<br/>
+-Configura la barra de menú con opciones de archivo y ayuda.<br/>
 
 seleccionarArchivo:<br/>
-Muestra un cuadro de busqueda de archivos a traves de un explorador. (JFileChooser)<br/>
+-Muestra un cuadro de busqueda de archivos a traves de un explorador. (JFileChooser)<br/>
 
-mostrarAcercaDe:<br/>
-Muestra un cuadro con enlaces clicables hacia los perfiles de los desarrolladores. (JEditorPane)<br/>
+-mostrarAcercaDe:<br/>
+-Muestra un cuadro con enlaces clicables hacia los perfiles de los desarrolladores. (JEditorPane)<br/>
 
 7. Método Main<br/>
 Usa SwingUtilities.invokeLater para asegurar que la GUI se ejecute en el hilo adecuado.<br/>
