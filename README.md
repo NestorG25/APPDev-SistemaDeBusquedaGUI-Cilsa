@@ -21,11 +21,11 @@ javax.swing.event.HyperlinkEvent y java.net.URI: Para manejar enlaces interactiv
 La clase DesafioFinalV2GUI hereda de JFrame, lo que la convierte en una ventana principal de la aplicación.
 
 3. Atributos de la Clase
--Campos de texto (JTextField): Para entrada de datos (nombre del archivo, términos de búsqueda, y encabezados).
--ComboBox (JComboBox): Permite seleccionar un criterio de búsqueda.
--Área de texto (JTextArea): Muestra los resultados de las búsquedas.
--Botones (JButton): Realizan acciones como buscar o limpiar campos.
--String archivoEntrada: Nombre del archivo por defecto (MOCK_DATA.csv).
+-Campos de texto (JTextField): Para entrada de datos (nombre del archivo, términos de búsqueda, y encabezados).<br/>
+-ComboBox (JComboBox): Permite seleccionar un criterio de búsqueda.<br/>
+-Área de texto (JTextArea): Muestra los resultados de las búsquedas.<br/>
+-Botones (JButton): Realizan acciones como buscar o limpiar campos.<br/>
+-String archivoEntrada: Nombre del archivo por defecto (MOCK_DATA.csv).<br/>
 
 4. Constructor
 El constructor inicializa la ventana y configura la interfaz gráfica: Configuración de la ventana.
