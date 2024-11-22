@@ -1,5 +1,6 @@
 # SistemaDeBusquedaGUI
 Ejemplo: Sistema De Búsqueda de Archivos GUI (App Dev) Java y Framework Java Swing <br/>
+
 Flujo General:<br/>
 Se carga la ventana con un formulario y un área de resultados.<br/>
 El usuario puede buscar en un archivo CSV seleccionando un criterio y proporcionando un término.<br/>
